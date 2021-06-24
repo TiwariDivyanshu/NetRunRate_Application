@@ -1,0 +1,59 @@
+{
+   "ResponseArray":[
+      {
+         "id":1,
+         "team":"Vikings XI",
+         "matches":7,
+         "won":5,
+         "NRR":0.771,
+         "Run_Scored":1130,
+         "Overs":133.165,
+         "Run_Against":1071,
+         "Overs_Bowl":138.844
+      },
+      {
+         "id":2,
+         "team":"Bhayankar XI",
+         "matches":7,
+         "won":4,
+         "NRR":0.597,
+         "Run_Scored":1217,
+         "Overs":140,
+         "Run_Against":1066,
+         "Overs_Bowl":131.666
+      },
+      {
+         "id":3,
+         "team":"Ragnarok Stars",
+         "matches":7,
+         "won":4,
+         "NRR":0.319,
+         "Run_Scored":1085,
+         "Overs":126,
+         "Run_Against":1136,
+         "Overs_Bowl":137
+      },
+      {
+         "id":4,
+         "team":"Treacherous",
+         "matches":7,
+         "won":3,
+         "NRR":0.331,
+         "Run_Scored":1066,
+         "Overs":128.333,
+         "Run_Against":1094,
+         "Overs_Bowl":137.165
+      },
+      {
+         "id":5,
+         "team":"Renegades XI",
+         "matches":8,
+         "won":2,
+         "NRR":0.111,
+         "Run_Scored":1003,
+         "Overs":155.333,
+         "Run_Against":1134,
+         "Overs_Bowl":138.165
+      }
+   ]
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CricHeroes</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <style>
+
+    body {padding-top: 50px;background:url('background-3.jpg')  fixed;background-size: cover;}
+    .text-bold {font-weight: bolder;}
+    .text-right {float:right;}
+    .green-text {color:green;}
+    .red-text {color:red;}
+
+    .logo-span img {height: 100%; width: 70%; margin-top: 10px;}
+
+    #pointsTblMainDiv{margin-top: 20px;}
+    #PointsTable{border:3px solid black}
+    #calculateModal{top:100px}
+    #ErrorModal {z-index:1050}
+    #calculateModal.right .modal-dialog {position: fixed;margin: auto;width: 380px;height: 90%;-webkit-transform: translate3d(7%, 0, 0);-ms-transform: translate3d(0%, 0, 0);-o-transform: translate3d(7%, 0, 0);transform: translate3d(0%, 0, 0);}
+	  #calculateModal.right .modal-content {height: 90%;}
+	  #calculateModal.right .modal-body {padding: 15px 15px 80px;}
+    #calculateModal.right.fade .modal-dialog {right: -320px;-webkit-transition: opacity 1.3s linear, right 1.3s ease-out;transition: opacity 1.3s linear, right 1.3s ease-out;-moz-transition: opacity 0.3s linear, left 1.3s ease-out;-o-transition: opacity 0.3s linear, left 0.3s ease-out;-moz-transition: opacity 0.3s linear, right 0.3s ease-out;}
+	  #calculateModal.right.fade.in .modal-dialog {right: 0;}
+    #calculateModal .modal-content {border-radius: 0;border: none;}
+    #calculateModal .modal-header {border-bottom-color: #06330f;background-color: #4db8d3;}
+    .side-nav {vertical-align: top;}
+    #SubForm{float: right;margin-right: 120px;margin-top: 50px;}
+    .btn {background-color:rgb(61, 204, 73);border-color:#000}
+    input::-webkit-outer-spin-button,
+	  input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
+	  /* Firefox */
+	  input[type=number] {-moz-appearance: textfield;height:24px;}
+    .close{cursor: pointer;}
+    #ErrorModal {z-index:1051}
+	  #ErrorModal .modal-header{border-bottom: none; }
+	  #ErrorModal button{top:32px; right:10px;}
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class = "col-md-12">
+      <div class = "col-md-1"><span class="logo-span"><img src = "cricket_logo_icon.png" ></span></div>
+      <div class = "col-md-10"><h2>Super Cricket 2019 tournament.</h3></div>
+    </div>
+    <div id = "pointsTblMainDiv" class = "col-md-12"></div>
+  </div>
+  <div  id="calculateModal" class="modal right fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel2">Calculate</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div id= "submitForm" class="modal-body"></div>
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div>
+  <div class="modal fade" id="ErrorModal">
+    <div class="modal-dialog">
+      <div class="modal-header alert alert-block alert-danger">
+        <div>
+          <label></label>
+        </div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="SuccessModal">
+    <div class="modal-dialog">
+      <div class="modal-header alert alert-block alert-success">
+        <div>
+          <label></label>
+        </div>
+        <button type="button" id="close-success"class="close" data-dismiss="modal">&times;</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<script src = "/mainJS"></script>
